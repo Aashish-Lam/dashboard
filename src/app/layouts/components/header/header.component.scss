@@ -1,0 +1,13 @@
+.headersection {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 60px;
+}
+img {
+  height: 60px;
+  width: 50px;
+  object-fit: cover;
+  border: 2px solid red;
+  border-radius: 20%;
+}

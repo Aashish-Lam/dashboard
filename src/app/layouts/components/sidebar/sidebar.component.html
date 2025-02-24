@@ -1,0 +1,29 @@
+<div class="example-container" [class.example-is-mobile]="isMobile()">
+  <app-toolbars></app-toolbars>
+
+  <mat-sidenav-container
+    class="example-sidenav-container"
+    [style.marginTop.px]="isMobile() ? 56 : 0"
+    [style.marginRight.px]="isMobile() ? 56 : 0"
+  >
+    <mat-sidenav
+      [mode]="isMobile() ? 'over' : 'side'"
+      [fixedInViewport]="isMobile()"
+      fixedTopGap="56"
+      [opened]="isMobile() === false"
+    >
+      <mat-nav-list>
+        <a
+          mat-list-item
+          [routerLink]="item.route"
+          routerLinkActive="active"
+          *ngFor="let item of navigationlists"
+        >
+          <mat-icon>{{ item.icon }}</mat-icon> {{ item.label }}
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content> <router-outlet></router-outlet> </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

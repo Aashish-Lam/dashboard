@@ -1,0 +1,29 @@
+.cardsrow {
+  display: flex;
+  flex-direction: row;
+}
+.cardscolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cardscolumn .mat-card {
+  height: fit-content;
+  width: max-content;
+  margin: auto;
+  background-color: rgb(193, 235, 235);
+}
+.cardsrow .mat-card {
+  height: fit-content;
+  width: max-content;
+  margin: auto;
+  background-color: rgb(193, 235, 235);
+}
+.mat-card-image {
+  height: 200px;
+  width: 200px;
+}
+.description {
+  margin-top: 50px;
+  background-color: rgb(193, 160, 137);
+}
