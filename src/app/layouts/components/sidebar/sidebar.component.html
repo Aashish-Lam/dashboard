@@ -7,10 +7,10 @@
     [style.marginRight.px]="isMobile() ? 56 : 0"
   >
     <mat-sidenav
+      [opened]="toggle"
       [mode]="isMobile() ? 'over' : 'side'"
       [fixedInViewport]="isMobile()"
       fixedTopGap="56"
-      [opened]="isMobile() === false"
     >
       <mat-nav-list>
         <a

@@ -17,7 +17,6 @@ import { ToolbarService } from '../../service/toolbar.service';
   imports: [
     CommonModule,
     MatIconModule,
-    MatIconModule,
     MatButtonModule,
     MatToolbarModule,
     MatSidenavModule,
@@ -57,5 +56,8 @@ export class SidebarComponent implements OnDestroy {
   }
   ngOnDestroy(): void {
     this._mobileQuery.removeEventListener('change', this._mobileQueryListener);
+  }
+  get Toggler(): boolean {
+    return this.toggle;
   }
 }

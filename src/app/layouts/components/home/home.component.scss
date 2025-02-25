@@ -1,6 +1,7 @@
 .cardsrow {
   display: flex;
   flex-direction: row;
+  gap: 20px;
 }
 .cardscolumn {
   display: flex;
@@ -16,7 +17,6 @@
 .cardsrow .mat-card {
   height: fit-content;
   width: max-content;
-  margin: auto;
   background-color: rgb(193, 235, 235);
 }
 .mat-card-image {
